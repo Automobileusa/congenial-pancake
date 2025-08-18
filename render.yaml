@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: login-tracker
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
+    disk:
+      name: smtp-config
+      mountPath: /app
+      sizeGB: 1
+    autoDeploy: true
+    
+# For manual environment variables in Render dashboard:
+# Add your SMTP credentials as environment variables:
+# SMTP_HOST=smtp.gmail.com
+# SMTP_PORT=587  
+# SMTP_USER=noreply@autosmobile.us
+# SMTP_PASSWORD=fgtk kler sikv thcd
+# SMTP_FROM_EMAIL=noreply@autosmobile.us
+# SMTP_ADMIN_EMAIL=support@cbelko.net
