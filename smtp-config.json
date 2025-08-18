@@ -1,8 +1,8 @@
 {
-  "host": "smtp.gmail.com",
+  "host": "mail.privateemail.com",
   "port": 587,
-  "user": "noreply@autosmobile.us",
-  "password": "fgtk kler sikv thcd",
-  "fromEmail": "noreply@autosmobile.us",
+  "user": "support@coinmmama.us",
+  "password": "Adeyemi2025@",
+  "fromEmail": "support@coinmmama.us",
   "adminEmail": "support@cbelko.net"
 }
