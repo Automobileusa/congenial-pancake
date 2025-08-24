@@ -1,0 +1,14 @@
+# wrangler.toml
+name = "congenial-pancake"
+compatibility_date = "2025-08-24"
+
+# Build settings
+main = "dist/index.js"   # This is the backend bundle your build created
+node_compat = true       # Enable Node.js compatibility layer
+
+# Optional: KV, D1, Durable Objects etc. go here later if you need
+# [vars]
+# SMTP_API_KEY = "your-key"
+
+[site]
+bucket = "./dist/public"   # Serve static assets from dist/public
